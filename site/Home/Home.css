@@ -1,7 +1,7 @@
 :root {
-  --primary: #363636;
-  --secondary: #ddd;
-  --logo-color: rgba(131, 3, 3, 0.999);
+  --primary: #151515;
+  --secondary: #EEEEEE;
+  --logo-color: #A91D3A;
 }
 
 * {
@@ -30,6 +30,7 @@
 }
 
 .header .navbar .logo {
+  margin: 0px 0px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -38,6 +39,8 @@
 }
 
 .header .navbar .profile {
+  
+  margin: 0px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -46,6 +49,7 @@
 
 
 .header .navbar .navbar-links {
+  margin: 0px 0px;
   list-style: none;
   display: flex;
   gap: 20px;
@@ -57,7 +61,25 @@
   text-decoration: none;
 }
 
-.header .navbar .logo-link .logo-escrito {
+.header .navbar a{
+  text-decoration: none;
+}
+
+.header .navbar .escrito {
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 1.4rem;
+  color: var(--logo-color);
+  text-shadow:
+    1px 1px 1px var(--secondary),
+    1px 1px 1px var(--secondary),
+    1px 1px 1px var(--secondary),
+    1px 1px 1px var(--secondary);
+  ;
+}
+.header  .btn_cadastro {
+  margin-right: 80px;
+  text-decoration: none;
   font-weight: 1000;
   font-size: 1.4rem;
   color: var(--logo-color);
@@ -69,17 +91,6 @@
   ;
 }
 
-.header .navbar .profile-link .profile-escrito {
-  font-weight: 1000;
-  font-size: 1.4rem;
-  color: var(--logo-color);
-  text-shadow:
-    1px 1px 1px var(--secondary),
-    1px 1px 1px var(--secondary),
-    1px 1px 1px var(--secondary),
-    1px 1px 1px var(--secondary);
-  ;
-}
 
 
 .header .navbar .logo-link .logo-img {
@@ -89,6 +100,7 @@
 .header .navbar .profile-link .profile-img {
   width: 75px;
 }
+
 
 /* PAGINA */
 
@@ -112,11 +124,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background: transparent;
   border-radius: 12px;
   padding: 30px 40px;
-  border: 2px solid rgba(255, 255, 255, .2);
+  border: 3px solid rgba(27, 26, 26, 0.2);
   backdrop-filter: blur(10px);
 }
 
@@ -195,9 +206,9 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 15px;
+  
 }
 
 .footer .footer-bottom img {
-  width: 102px;
+  width: 80px;
 }
