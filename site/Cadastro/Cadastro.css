@@ -98,7 +98,7 @@
 }
 .card {
     margin: 1% 0;
-    width: calc(fit-content + 120px);
+    
     background: transparent;
     border-radius: 12px;
     padding: 25px 40px;
